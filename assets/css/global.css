@@ -29,6 +29,7 @@
     --form-field-error: rgb(255, 76, 76);
 
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -42,4 +43,62 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
+}
+
+
+/*                  
+
+
+                INICIO 
+
+
+*/
+body{
+    margin: 0px;
+    border: 0px;
+    background-color: var(--primary-color);
+}
+
+header{
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0px;
+}
+
+header{
+    background-color: var(--nav-bg-color);
+
+}
+
+header a{
+  color: white;
+}
+
+header img{
+  width: 100px;
+}
+
+.header-nav{
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+}
+
+.header-nav a:nth-child(2){
+  background-color: #B535F6;
+  border-radius: 20px;
+}
+
+header a{
+  text-decoration: none;
+  padding: 0.4rem 1.5rem;
+  font-family: "Raleway";
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
