@@ -53,10 +53,16 @@
 
 
 */
+
+*{
+  box-sizing: border-box;
+}
 body{
     margin: 0px;
     border: 0px;
     background-color: var(--primary-color);
+    margin-top: 15vh;
+    margin-bottom: 6rem;
 }
 
 header{
@@ -68,6 +74,10 @@ header{
   justify-content: center;
   gap: 1rem;
   padding: 1rem 0px;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 header{
@@ -94,11 +104,49 @@ header img{
   border-radius: 20px;
 }
 
-header a{
+header a, #footer-links a{
   text-decoration: none;
   padding: 0.4rem 1.5rem;
   font-family: "Raleway";
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+section img{
+  max-width: 100%;
+}
+
+footer{
+  height: 40vh;
+  padding-top: 3rem;
+}
+
+#footer-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#footer-links a{
+  color: #9E86FF;
+
+}
+
+#footer-about{
+  color: rgb(158, 134, 255);
+  font-family: 'Quicksand';
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+#footer-logos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 5rem;
+
 }
